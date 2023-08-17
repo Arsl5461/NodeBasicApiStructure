@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  web:
+    image: arslanakmal/node-basic-app:latest
+    ports:
+      - "8084:8000"
