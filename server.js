@@ -7,7 +7,9 @@ const registerRouter = require("./routes/user.route");
 // connectDb();
 app.use(registerRouter);
 
-res.json("Hello World!");
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 
 app.listen(PORT, () => {
   console.log(`Server is running ${PORT}`);
