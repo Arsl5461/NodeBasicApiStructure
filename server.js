@@ -10,6 +10,9 @@ app.use(registerRouter);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+app.get("/hello", (req, res) => {
+  res.send("Hello From Docker Side!");
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running ${PORT}`);
