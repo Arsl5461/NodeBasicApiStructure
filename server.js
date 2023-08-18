@@ -16,6 +16,9 @@ app.get("/hello", (req, res) => {
 app.get("/arsl", (req, res) => {
   res.send("Hello From Arslan Side!");
 });
+app.get("/ali", (req, res) => {
+  res.send("Hello From Ali Haider");
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running ${PORT}`);
